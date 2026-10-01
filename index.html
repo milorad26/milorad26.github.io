@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milorad Dakic · Java Backend Developer</title>
+  <meta name="description" content="Portfolio of Milorad Dakic, Java backend developer with 7+ years of experience in Java EE, SOAP/REST services, microservices and relational databases.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23d93025'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='bold' text-anchor='middle' fill='white'>MD</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo"><span class="logo-mark">MD</span><span class="logo-text">milorad<span class="accent">.dev</span></span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About me</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/CV_Milorad_Dakic.pdf" class="btn btn-small" target="_blank" rel="noopener">CV ↓</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-text reveal">
+      <p class="eyebrow mono">// hello, world</p>
+      <h1>I'm <span class="accent">Milorad Dakic</span>,<br>Java Backend Developer.</h1>
+      <p class="lead">
+        I build and maintain enterprise backends with Java EE, SOAP and REST services and relational databases.
+        Seven-plus years across monoliths and microservices, with a tester's eye for quality.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-meta mono">
+        <span>📍 Belgrade, Serbia</span>
+        <span>🏢 Cadooz GmbH, Hamburg</span>
+        <span>☕ Java since 2018</span>
+      </div>
+    </div>
+
+    <div class="hero-code reveal">
+      <div class="code-window">
+        <div class="code-bar"><i></i><i></i><i></i><span>Developer.java</span></div>
+<pre><code><span class="kw">public final class</span> <span class="cls">Developer</span> {
+
+    <span class="kw">private final</span> String name     = <span class="str">"Milorad Dakic"</span>;
+    <span class="kw">private final</span> String role     = <span class="str">"Java Backend Developer"</span>;
+    <span class="kw">private final</span> <span class="kw">int</span>    years    = <span class="num">7</span>;
+    <span class="kw">private final</span> List&lt;String&gt; stack = List.of(
+        <span class="str">"Java"</span>, <span class="str">"Java EE"</span>, <span class="str">"Spring"</span>, <span class="str">"REST"</span>, <span class="str">"SOAP"</span>,
+        <span class="str">"Microservices"</span>, <span class="str">"Oracle SQL"</span>, <span class="str">"MySQL"</span>
+    );
+
+    <span class="kw">public</span> Response <span class="fn">handle</span>(Request request) {
+        <span class="cm">// reliable, tested, maintainable</span>
+        <span class="kw">return</span> service.process(request);
+    }
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head reveal">
+      <span class="section-num mono">01</span>
+      <h2>About me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a Java developer with over seven years of experience building enterprise applications with
+          Java EE, SOAP and REST services, and relational databases. I've worked on both large monolithic
+          systems and on their gradual transition towards microservices.
+        </p>
+        <p>
+          Before focusing fully on development I worked in software testing and technical support.
+          That background shapes how I write code today: I care about edge cases, clear error handling
+          and systems that stay reliable in production, not just in the demo.
+        </p>
+        <p>
+          Since 2021 I've been part of the backend team at <strong>Cadooz GmbH</strong> in Hamburg,
+          working on a large e-commerce and incentive platform used by corporate customers across Europe.
+        </p>
+        <p class="about-personal">
+          Outside of work I run marathons and read history. Both have taught me the same lesson:
+          steady, consistent effort beats sprints.
+        </p>
+      </div>
+      <aside class="about-facts reveal">
+        <div class="fact"><span class="fact-k mono">Location</span><span class="fact-v">Belgrade, Serbia</span></div>
+        <div class="fact"><span class="fact-k mono">Experience</span><span class="fact-v">7+ years</span></div>
+        <div class="fact"><span class="fact-k mono">Focus</span><span class="fact-v">Backend · APIs · Databases</span></div>
+        <div class="fact"><span class="fact-k mono">Languages</span>
+          <span class="fact-v">
+            <span class="lang"><b>Serbian</b> native</span>
+            <span class="lang"><b>English</b> fluent</span>
+            <span class="lang"><b>Italian</b> intermediate</span>
+            <span class="lang"><b>German</b> A1</span>
+          </span>
+        </div>
+        <div class="fact"><span class="fact-k mono">Interests</span><span class="fact-v">Backend development, marathon running, history</span></div>
+        <a href="assets/CV_Milorad_Dakic.pdf" class="btn btn-full" target="_blank" rel="noopener">Download CV (PDF)</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section-head reveal">
+      <span class="section-num mono">02</span>
+      <h2>Work experience</h2>
+    </div>
+    <ol class="timeline">
+      <li class="tl-item reveal">
+        <span class="tl-date mono">Oct 2021 – present</span>
+        <div class="tl-body">
+          <h3>Java Developer</h3>
+          <p class="tl-org">Cadooz GmbH · Hamburg, Germany</p>
+          <ul>
+            <li>Develop backend functionality for a large monolithic e-commerce platform using Java EE, SOAP and REST services.</li>
+            <li>Contribute to the partial transition toward a microservices architecture.</li>
+            <li>Build and maintain frontend features using the Struts framework.</li>
+          </ul>
+          <div class="tags"><span>Java EE</span><span>REST</span><span>SOAP</span><span>Microservices</span><span>Struts</span><span>Oracle SQL</span></div>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <span class="tl-date mono">Feb 2021 – Aug 2021</span>
+        <div class="tl-body">
+          <h3>Software Tester</h3>
+          <p class="tl-org">Finbet doo · Belgrade, Serbia</p>
+          <ul>
+            <li>Manual and automated testing for a betting company's sports events and casino games platforms.</li>
+          </ul>
+          <div class="tags"><span>QA</span><span>Test automation</span></div>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <span class="tl-date mono">Jan 2019 – Jan 2021</span>
+        <div class="tl-body">
+          <h3>Java Developer</h3>
+          <p class="tl-org">Engineering Software Lab · Belgrade, Serbia</p>
+          <ul>
+            <li>Full-stack development using a custom Java framework and Oracle SQL.</li>
+            <li>Estimated and tracked development tasks in Jira.</li>
+          </ul>
+          <div class="tags"><span>Java</span><span>Oracle SQL</span><span>Jira</span></div>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <span class="tl-date mono">Jun 2018 – Nov 2018</span>
+        <div class="tl-body">
+          <h3>Java Developer Intern</h3>
+          <p class="tl-org">Cubes doo · Belgrade, Serbia</p>
+          <ul>
+            <li>Built Java web applications using Servlets.</li>
+            <li>Implemented SOAP services with JAX-WS and REST services with JAX-RS.</li>
+            <li>Implemented business logic using EJBs.</li>
+          </ul>
+          <div class="tags"><span>Servlets</span><span>JAX-WS</span><span>JAX-RS</span><span>EJB</span></div>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <span class="tl-date mono">Oct 2015 – Jan 2016</span>
+        <div class="tl-body">
+          <h3>Technical Support Specialist</h3>
+          <p class="tl-org">NCR Corporation · Belgrade, Serbia</p>
+          <ul>
+            <li>Remote technical support and issue resolution for POS and self-checkout systems in Walmart supermarkets.</li>
+          </ul>
+          <div class="tags"><span>Support</span><span>POS systems</span></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="section-head reveal">
+      <span class="section-num mono">03</span>
+      <h2>Education</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="card-date mono">Mar 2018 – Sep 2018</span>
+        <h3>Certified Java Developer</h3>
+        <p class="card-org">Cubes School · Belgrade, Serbia</p>
+        <p>Curriculum: Java Core, Java EE, MySQL, SOAP and REST services, JavaServer Faces.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-date mono">Oct 2007 – Sep 2012</span>
+        <h3>Graduate Manager of Security</h3>
+        <p class="card-org">Faculty of Security Studies · Belgrade, Serbia</p>
+        <p>Degree in security studies.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-head reveal">
+      <span class="section-num mono">04</span>
+      <h2>Technical skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <h3>Languages &amp; frameworks</h3>
+        <div class="chips"><span class="chip chip-hi">Java</span><span class="chip chip-hi">Java EE</span><span class="chip">Spring</span><span class="chip">Struts</span><span class="chip">EJB</span><span class="chip">Servlets</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>APIs &amp; architecture</h3>
+        <div class="chips"><span class="chip chip-hi">REST</span><span class="chip chip-hi">SOAP</span><span class="chip">JAX-RS</span><span class="chip">JAX-WS</span><span class="chip">Microservices</span><span class="chip">Monolith migration</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Databases</h3>
+        <div class="chips"><span class="chip chip-hi">Oracle SQL</span><span class="chip">MySQL</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Tools &amp; others</h3>
+        <div class="chips"><span class="chip">Git</span><span class="chip">SVN</span><span class="chip">Jira</span><span class="chip">QlikSense</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Testing / QA</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-head reveal">
+      <span class="section-num mono">05</span>
+      <h2>Projects &amp; work</h2>
+      <p class="section-sub">Selected things I've built or contributed to. Most of my professional work is in private repositories, so these are described rather than linked.</p>
+    </div>
+    <div class="cards projects">
+      <article class="card project reveal">
+        <div class="project-icon">🛒</div>
+        <h3>Incentive &amp; e-commerce platform backend</h3>
+        <p>Backend features for a large Java EE monolith serving corporate incentive shops: order processing, checkout validation, voucher handling and SOAP/REST integrations with partners.</p>
+        <div class="tags"><span>Java EE</span><span>SOAP</span><span>REST</span><span>Oracle</span></div>
+        <p class="project-meta mono">Cadooz GmbH · 2021 – present</p>
+      </article>
+      <article class="card project reveal">
+        <div class="project-icon">🧩</div>
+        <h3>Monolith to microservices transition</h3>
+        <p>Helped carve out REST microservices from a monolithic codebase, documenting APIs with OpenAPI and adding automated API tests to keep behaviour stable during the move.</p>
+        <div class="tags"><span>Microservices</span><span>OpenAPI</span><span>API testing</span></div>
+        <p class="project-meta mono">Cadooz GmbH</p>
+      </article>
+      <article class="card project reveal">
+        <div class="project-icon">🗄️</div>
+        <h3>Custom-framework business applications</h3>
+        <p>Full-stack development of business applications on an in-house Java framework backed by Oracle SQL, with task estimation and tracking in Jira.</p>
+        <div class="tags"><span>Java</span><span>Oracle SQL</span><span>Jira</span></div>
+        <p class="project-meta mono">Engineering Software Lab · 2019 – 2021</p>
+      </article>
+      <article class="card project reveal">
+        <div class="project-icon">🎰</div>
+        <h3>Betting platform QA</h3>
+        <p>Manual and automated test coverage for sports-betting and casino platforms, from test case design to regression runs.</p>
+        <div class="tags"><span>QA</span><span>Automation</span></div>
+        <p class="project-meta mono">Finbet · 2021</p>
+      </article>
+    </div>
+    <p class="github-cta reveal">
+      Public code lives on <a href="https://github.com/milorad26" target="_blank" rel="noopener">github.com/milorad26</a>.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section-head reveal">
+      <span class="section-num mono">06</span>
+      <h2>Contact</h2>
+      <p class="section-sub">Open to backend roles and interesting Java projects. The fastest way to reach me is email.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <a class="contact-card" href="mailto:dakicmilorad@yahoo.com">
+        <span class="contact-icon">✉️</span>
+        <span class="contact-k mono">Email</span>
+        <span class="contact-v">dakicmilorad@yahoo.com</span>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/milorad-dakic-07a24917" target="_blank" rel="noopener">
+        <span class="contact-icon">💼</span>
+        <span class="contact-k mono">LinkedIn</span>
+        <span class="contact-v">milorad-dakic-07a24917</span>
+      </a>
+      <a class="contact-card" href="https://github.com/milorad26" target="_blank" rel="noopener">
+        <span class="contact-icon">🐙</span>
+        <span class="contact-k mono">GitHub</span>
+        <span class="contact-v">milorad26</span>
+      </a>
+      <a class="contact-card" href="assets/CV_Milorad_Dakic.pdf" target="_blank" rel="noopener">
+        <span class="contact-icon">📄</span>
+        <span class="contact-k mono">CV</span>
+        <span class="contact-v">Download PDF</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span class="mono">© <span id="year"></span> Milorad Dakic</span>
+  <span class="mono">Built with plain HTML, CSS &amp; JS · hosted on GitHub Pages</span>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
